@@ -8,7 +8,7 @@ export const skillGroups: SkillGroup[] = [
   {
     name: "Frontend",
     focus: "Responsive, accessible interfaces.",
-    items: ["HTML", "CSS", "JavaScript", "TypeScript", "React", "Next.js", "Tailwind CSS"],
+    items: ["HTML", "CSS", "JavaScript", "TypeScript", "React", "Next.js"],
   },
   {
     name: "Backend & data",
@@ -28,7 +28,6 @@ export const skillGroups: SkillGroup[] = [
       "Test cases",
       "Bug reporting",
       "Regression testing",
-      "Selenium",
       "Python",
       "pytest",
     ],

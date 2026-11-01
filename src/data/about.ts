@@ -6,7 +6,7 @@ export const about = {
   headline: "I build web applications, and I check that they work.",
   paragraphs: [
     "I'm a web developer with a background in Information Technology. I build web applications that are functional, responsive and easy to use, and I pay attention to the details that make software dependable: clean implementation, sensible structure and careful testing.",
-    "Working in IT taught me to troubleshoot methodically instead of guessing. My interest in quality assurance means I test what I build before anyone else has to, and that habit shapes how I write code in the first place.",
+    "My background in IT has helped me develop a methodical approach to problem-solving and troubleshooting. Through my academic projects and hands-on development experience, I've developed an interest in quality assurance and the importance of testing software thoroughly. I believe building reliable applications starts with writing clean code and thinking about potential issues from the beginning.",
   ],
   principles: [
     {
