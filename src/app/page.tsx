@@ -4,10 +4,11 @@ import { Hero } from "@/components/sections/Hero";
 import { About } from "@/components/sections/About";
 import { Skills } from "@/components/sections/Skills";
 import { Experience } from "@/components/sections/Experience";
-import { Process } from "@/components/sections/Process";
+import { Achievements } from "@/components/sections/Achievements";
 import { Contact } from "@/components/sections/Contact";
 import { ProjectShowcase } from "@/components/projects/ProjectShowcase";
 import { projects } from "@/data/projects";
+//import { Process } from "@/components/sections/Process";
 
 export default function Home() {
   return (
@@ -19,7 +20,8 @@ export default function Home() {
         <About />
         <Skills />
         <Experience />
-        <Process />
+        <Achievements />
+        {/* <Process /> */}
         <Contact />
       </main>
       <Footer />

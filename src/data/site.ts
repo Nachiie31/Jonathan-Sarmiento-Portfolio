@@ -11,7 +11,7 @@ export const siteConfig = {
   locale: "en_US",
   // Keep under ~160 characters so search engines don't truncate it.
   description:
-    "Web developer building functional, responsive, user-focused web applications with clean implementation, thoughtful design and reliable QA. Portfolio of projects and case studies.",
+    "Web developer building responsive, user-focused applications with clean code, thoughtful design, and reliable QA.",
   keywords: [
     "web developer",
     "frontend developer",
@@ -24,11 +24,11 @@ export const siteConfig = {
   ],
   // TODO: add your real profile links. Leave empty strings until you have them.
   links: {
-    email: "jonathan.galsim.sarmiento@gmail.com", // e.g. "you@example.com"
-    github: "https://github.com/Nachiie31", // e.g. "https://github.com/username"
-    linkedin: "www.linkedin.com/in/sarmiento-jonathan-g-3458b527a", // e.g. "https://www.linkedin.com/in/username"
+    email: "jonathan.galsim.sarmiento@gmail.com", 
+    github: "https://github.com/Nachiie31", 
+    linkedin: "https://www.linkedin.com/in/jonathan-sarmiento-3458b527a/", 
   },
-  // TODO: optional, e.g. "Philippines". Used in structured data only if set.
+  
   location: "Philippines",
 } as const;
 

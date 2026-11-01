@@ -130,10 +130,10 @@ export const projects: Project[] = [
     ],
     links: {
       live: { label: "Try the live demo", href: "https://servebiz.vercel.app/login?guest=1" }, // TODO
-      // source: { label: "View source", href: "https://github.com/Nachiie31/..." }, // only if the repo is public
+      source: { label: "View source", href: "https://github.com/Nachiie31/ServeBiz" }, // only if the repo is public
     },
   },
-  {
+  /*{
     ...blank,
     slug: "project-two",
     number: "02",
@@ -150,5 +150,5 @@ export const projects: Project[] = [
     category: "QA & Test Automation",
     tagline: "[Placeholder] One-line summary of what this project does.",
     stack: ["Python", "pytest", "Selenium"],
-  },
+  },*/
 ];
