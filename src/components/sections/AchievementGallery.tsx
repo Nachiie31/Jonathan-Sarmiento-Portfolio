@@ -115,7 +115,13 @@ export function AchievementGallery({ items }: { items: Achievement[] }) {
                 width={current.image.width}
                 height={current.image.height}
                 sizes="(min-width: 1024px) 70vw, 94vw"
-                className="h-auto max-h-[72dvh] w-auto max-w-full object-contain"
+                // Size is set from the known dimensions so the viewer is the right shape before the image loads.
+                style={{
+                  width: `min(100%, ${((72 * current.image.width) / current.image.height).toFixed(2)}dvh)`,
+                  maxWidth: `${current.image.width}px`,
+                  height: "auto",
+                }}
+                className="mx-auto block"
               />
             </div>
             <figcaption className="flex items-start justify-between gap-4 border-t border-border p-4 sm:p-5">

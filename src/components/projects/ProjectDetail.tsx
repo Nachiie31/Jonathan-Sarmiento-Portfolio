@@ -5,6 +5,7 @@ import { ProjectPreview } from "@/components/projects/ProjectPreview";
 import { Reveal } from "@/components/ui/Reveal";
 import { projects, type Project } from "@/data/projects";
 import { getNeighbors } from "@/lib/projects";
+import { ProjectQA } from "@/components/projects/ProjectQA";
 
 type Props = { project: Project; variant: "page" | "modal" };
 
@@ -173,6 +174,7 @@ export function ProjectDetail({ project, variant }: Props) {
         <Row label="Testing & quality" as={Sub}>
           <p className={lead}>{project.testing}</p>
         </Row>
+        <ProjectQA qa={project.qa} as={Sub} />
       </div>
 
       {projects.length > 1 && (

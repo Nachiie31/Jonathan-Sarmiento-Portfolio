@@ -4,8 +4,10 @@
  * Everything below is a clearly marked "[Placeholder]". Replace with your real projects;
  * never leave invented clients, users, revenue or performance numbers here.
  */
+
 export type ProjectLink = { label: string; href: string };
 export type ProjectImage = { src: string; alt: string; width: number; height: number };
+import type { ProjectQA } from "@/data/qa";
 
 export type Project = {
   slug: string;
@@ -23,6 +25,7 @@ export type Project = {
   decisions: { title: string; detail: string }[];
   challenges: { challenge: string; resolution: string }[];
   testing: string;
+  qa?: ProjectQA;
   /** Replace with real screenshots saved in /public/projects/<slug>/ */
   image?: ProjectImage;
   gallery: ProjectImage[];
@@ -30,6 +33,7 @@ export type Project = {
 };
 
 const blank = {
+  
   overview: "[Placeholder] Describe the project in two or three sentences.",
   problem: "[Placeholder] What problem or purpose led to this project?",
   role: "[Placeholder] Your role",
@@ -129,9 +133,11 @@ export const projects: Project[] = [
       { src: "/projects/servebiz/mobile-pos.png", alt: "ServeBiz POS on a phone screen", width: 390, height: 844 },
     ],
     links: {
-      live: { label: "Try the live demo", href: "https://servebiz.vercel.app/login?guest=1" }, // TODO
-      source: { label: "View source", href: "https://github.com/Nachiie31/ServeBiz" }, // only if the repo is public
+      live: { label: "Try the live demo", href: "https://servebiz.vercel.app/login?guest=1" }, 
+      source: { label: "View source", href: "https://github.com/Nachiie31/ServeBiz" }, 
     },
+
+    
   },
   /*{
     ...blank,
