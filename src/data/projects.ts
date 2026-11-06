@@ -8,6 +8,7 @@
 export type ProjectLink = { label: string; href: string };
 export type ProjectImage = { src: string; alt: string; width: number; height: number };
 import type { ProjectQA } from "@/data/qa";
+import { servebizQA } from "@/data/servebiz-qa";
 
 export type Project = {
   slug: string;
@@ -49,6 +50,7 @@ const blank = {
 };
 
 export const projects: Project[] = [
+  
     {
     slug: "servebiz",
     number: "01",
@@ -119,7 +121,8 @@ export const projects: Project[] = [
       },
     ],
     testing:
-      "198 manual test cases across 24 modules, each with steps, test data and expected results, plus a defect log. I ran about 130 browser checks and 330 database checks. 10 defects were found and fixed. Payments ran in Stripe test mode only, and I tested only in Chrome.",
+      "198 manual test cases across 24 modules, each with steps, test data and expected results, plus a defect log. 10 defects were found and fixed. Payments ran in Stripe test mode only, and I tested only in Chrome.",
+    qa: servebizQA,
     image: {
       src: "/projects/servebiz/dashboard.png",
       alt: "ServeBiz dashboard showing sales trends, low stock and expiring items",
